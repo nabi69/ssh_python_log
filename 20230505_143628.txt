@@ -1,0 +1,6 @@
+Command : ls
+output:
+snap
+Command : pwd
+output:
+/home/xpgroup
