@@ -23,7 +23,7 @@ pipeline {
         }
       }
     }
-    stage('Create Python Virtual Environment') {
+/*    stage('Create Python Virtual Environment') {
       steps {
         script {
           // Create a directory for the virtual environment
@@ -36,12 +36,12 @@ pipeline {
           sh 'pip install -r requirements.txt'
          }
       }
-    }
+    } */
     stage('Run Python Script') {
       steps {
         script {
           // Activate virtual environment before running Python scripts
-          sh 'source venv/bin/activate'
+/*          sh 'source venv/bin/activate'*/
           // Run Python script
           sh 'python3 pythonscripts/HelloWorld.py'
         }
